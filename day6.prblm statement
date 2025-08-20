@@ -1,0 +1,32 @@
+def factorial(n):
+    result = 1
+    for i in range(1, n+1):
+        result *= i
+    return result
+
+print("Factorial of 5:", factorial(5))
+
+
+def is_palindrome(s):
+    return s == s[::-1]
+
+print("Is 'madam' a palindrome?", is_palindrome("madam"))
+
+
+def largest_number(nums):
+    return max(nums)
+
+print("Largest number:", largest_number([10, 45, 2, 99, 56]))
+
+
+def count_vowels(s):
+    vowels = "aeiouAEIOU"
+    return sum(1 for ch in s if ch in vowels)
+
+print("Vowels in 'hello world':", count_vowels("hello world"))
+
+
+def reverse_words(sentence):
+    return " ".join(sentence.split()[::-1])
+
+print("Reversed words:", reverse_words("Python is fun"))
